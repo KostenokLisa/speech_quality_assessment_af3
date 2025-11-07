@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="">
+  <meta property="og:title" content="Desciptive audio quality evaluation with Audio Flamingo 3"/>
+  <!-- <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/> -->
+  <!-- <meta property="og:url" content="URL OF THE WEBSITE"/> -->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/> -->
+
+
+  <!-- <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image"> -->
+  <!-- Keywords for your paper to be indexed by-->
+  <!-- <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title> Descriptive speech quality evaluation with Audio Flamingo 3 </title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"> Descriptive speech quality evaluation with Audio Flamingo 3 </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href=https://dblp.org/pid/355/2049.html target="_blank">Elizaveta Kostenok</a>,</span>
+                <span class="author-block">
+                  <a href=https://scholar.google.com/citations?user=kVvEkkcAAAAJ target="_blank">Milos Cernak</a></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Logitech<br>2025</span>
+                  </div>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Audio section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title">Sample outputs</h2>
+    <div class="content">
+      <p>
+        <h3 class="title is-4">Score-based assessment</h3>
+        <p>            
+        The model is tasked to select the most appropriate score for a given speech sample, with the scale provided as guidance. <br>
+        </p>
+        <p>
+          <div class="centered-text">
+           e.g. <strong>How would you rate the noise level in the audio? Use the following scale to describe its impact:
+5. Not noticeable, 4. Slightly noticable, 3. Noticeable but not intrusive, 2. Somewhat intrusive, 1. Very intrusive.</strong>
+          </div>
+        </p>
+        <p>           
+          Each quality dimension is rated on scale from 1 to 5, and higher is better.
+        </p>
+        <div class="table_component" role="region" tabindex="0">
+          <table>              
+              <thead>
+                  <tr>
+                    <th>Input audio</th>
+                    <th>Speed </th>
+                    <th>Naturalness</th>
+                    <th>Noise</th>
+                    <th>Distortion</th>
+                    <th>Listening effort</th>
+                    <th>Continuity</th>
+                    <th>Overall quality</th>
+                  </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td>
+                      <audio class="audio-player" controls>
+                          <source src="static/audio/sys2giga-0000112.wav" type="audio/wav">
+                          Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <td>3.0</td>
+                  <td>4.0</td>
+                  <td>3.0 </td>
+                  <td>3.0</td>
+                  <td>5.0</td>
+                  <td>5.0</td>
+                  <td>4.0</td>
+              </tr>
+              <tr>
+                  <td>
+                      <audio class="audio-player" controls>
+                          <source src="static/audio/sysnistf-0000017.wav" type="audio/wav">
+                          Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <td>4.0</td>
+                  <td>3.0</td>
+                  <td>5.0 </td>
+                  <td>2.0</td>
+                  <td>3.0</td>
+                  <td>3.0</td>
+                  <td>2.0</td>
+              </tr>
+              <tr>
+                  <td>
+                      <audio class="audio-player" controls>
+                          <source src="static/audio/sysc182e-utt13a5738.wav" type="audio/wav">
+                          Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <td>3.0</td>
+                  <td>2.0</td>
+                  <td>3.0 </td>
+                  <td>3.0</td>
+                  <td>3.0</td>
+                  <td>5.0</td>
+                  <td>2.0</td>
+              </tr>
+              <tr>
+                  <td>
+                      <audio class="audio-player" controls>
+                          <source src="static/audio/sysd2e72-utta29ee2e.wav" type="audio/wav">
+                          Your browser does not support the audio element.
+                      </audio>
+                  </td>
+                  <td>3.0</td>
+                  <td>2.0</td>
+                  <td>4.0 </td>
+                  <td>3.0</td>
+                  <td>3.0</td>
+                  <td>4.0</td>
+                  <td>3.0</td>
+              </tr>
+                       
+              </tbody>
+          </table>
+          </div>
+          <br>
+
+          <h3 class="title is-4"> Specific descriptions </h3>
+            <p>            
+              The model further describes the type of noise/distortion and temporal characteristics. <br>
+            </p>
+            <p>
+          <div class="centered-text">
+          e.g. <strong> Analyze the noise present in this audio clip. </strong>
+          </div>
+        </p>
+          <div class="table_component" role="region" tabindex="1">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Input audio</th>
+                        <th>Feeling of voice</th>
+                        <th>Noise</th>
+                        <th>Distortion</th>
+                        <th>Unnatural pause</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                        <audio class="audio-player" controls>
+                            <source src="static/audio/sys2giga-0000112.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>Deep, gentle tone of a middle-aged man; peaceful quality</td>
+                    <td>Moderate buzzing noise from 0 to 3.5 seconds; noticeable but not intrusive</td>
+                    <td>Pitch distortion and mechanical sound from 0 to 3.5 seconds; somewhat alters speech perception </td>
+                    <td>None detected</td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <audio class="audio-player" controls>
+                            <source src="static/audio/sysnistf-0000017.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>Woman's voice, mostly distorted, mechanical and less human-like in places</td>
+                    <td>Very low background noise, not noticeable</td>
+                    <td>Noticeable pitch distortion and mechanical/electric current sound from 0 to 8.5 seconds </td>
+                    <td>Naturalness feels lacking between 3.5 and 4.5 seconds, but no explicit unnatural pause reported </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <audio class="audio-player" controls>
+                            <source src="static/audio/sysc182e-utt13a5738.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>Fairly unnatural, with a mechanical quality that detracts from the listening experience </td>
+                    <td>Noticeable background noise, characterized by a knocking sound from 0 to 1.7 seconds </td>
+                    <td>Mechanical quality affecting the voice from 0 to 6.9 seconds, making it somewhat distorted </td>
+                    <td>Audio maintains very smooth continuity</td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <audio class="audio-player" controls>
+                            <source src="static/audio/sysd2e72-utta29ee2e.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>Deep, gentle tone of a middle-aged man; peaceful quality</td>
+                    <td>Young woman, mechanical tone, somewhat odd</td>
+                    <td>Noticeable pitch alterations and mechanical sound, especially between 0.5 to 2 seconds </td>
+                    <td>Fairly unnatural voice between 1 to 1.5 seconds; minor interruptions but no specific unnatural pause </td>
+                  </tr>
+                </tbody>
+          </table>
+          </div>
+
+        <h3 class="title is-4"> Detailed comments </h3>
+            <p>            
+              The model analyzes each aspect individually before synthesizing all the dimensions to derive an overall score. <br>
+            </p>
+            <p>
+          <div class="centered-text">
+          e.g. <strong> Evaluate the quality of the audio you just heard. Start by analyzing specific aspects such as noise levels, distortion, naturalness, speed, listening effort, continuity, feeling of voice. Then provide an overall assessment based on these factors. </strong>
+          </div>
+        </p>
+          <div class="table_component" role="region" tabindex="2">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Input audio</th>
+                        <th>Generated description </th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                        <audio class="audio-player" controls>
+                            <source src="static/audio/sys2giga-0000112.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>The speech sample presents a moderate level of background noise, characterized by a buzzing sound from 0 to 3.5 seconds, which is noticeable but not overly intrusive. There is also some pitch distortion accompanied by a mechanical sound during the same timeframe, contributing to a somewhat altered perception of the speech. However, the audio is very smooth, with no breaks or stutters, allowing for a seamless listening experience. The listener experiences complete relaxation and requires no effort to understand the content, which is a positive aspect. The naturalness of the speech is somewhat lacking, as it does not fully resemble natural human speech, and the speaking speed is moderate. Overall, the voice is described as a deep, gentle tone of a middle-aged man, which adds a peaceful quality. Despite the issues with noise and distortion, the overall quality remains fair, reflecting a mix of strengths and weaknesses in the audio presentation.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <audio class="audio-player" controls>
+                            <source src="static/audio/sysnistf-0000017.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>The speech sample presents a very low level of background noise, making it easy to focus on the content. However, there is noticeable distortion, particularly a pitch distortion accompanied by a mechanical sound and intermittent electric current quality from 0 to 8.5 seconds, which detracts from the overall clarity. The audio is mostly smooth with only minor discontinuities, allowing for a relatively coherent listening experience. Understanding the speech requires moderate effort, indicating that while some attention is needed, it is not overly taxing. The naturalness of the voice is somewhat lacking, especially between 3.5 and 4.5 seconds, where it feels less human-like. The speaking speed is moderate, contributing to a balanced delivery. Overall, the voice is described as a woman's voice that is mostly distorted, leading to a fair quality assessment of the speech.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <audio class="audio-player" controls>
+                            <source src="static/audio/sysc182e-utt13a5738.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>The speech sample presents a moderate level of background noise, characterized by a knocking sound from 0 to 1.7 seconds, which is noticeable but not overly intrusive. Distortion is also present, with a mechanical quality affecting the voice from 0 to 6.9 seconds, making it somewhat distorted. However, the audio maintains a very smooth continuity, free from breaks or stutters, which aids in comprehension. Listeners experience a moderate effort to understand the speech, indicating that while it is somewhat challenging, it is still manageable. The naturalness of the voice is lacking, as it feels fairly unnatural, which detracts from the overall experience. The speaking speed is moderate, contributing to a balanced delivery. Overall, the quality of the speech is poor, primarily due to the unnaturalness and distortion, despite the smoothness and manageable listening effort. </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <audio class="audio-player" controls>
+                            <source src="static/audio/sysd2e72-utta29ee2e.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>The speech sample presents a very low level of background noise, making it easy to focus on the content. However, there is noticeable distortion characterized by pitch alterations and a mechanical sound, particularly between 0.5 to 2 seconds, which detracts from the overall clarity. The audio is mostly smooth with only minor interruptions, allowing for a relatively seamless listening experience. Understanding the speech requires moderate effort, indicating that while the message is somewhat accessible, it is not entirely effortless. The naturalness of the voice is lacking, especially between 1 to 1.5 seconds, where it sounds fairly unnatural. The speaking speed is moderate, contributing to a balanced delivery. Overall, the voice, described as that of a young woman, carries a mechanical tone that feels somewhat odd. Collectively, these factors suggest a fair quality of speech, with room for improvement in naturalness and distortion.</td>
+                  </tr>
+                </tbody>
+          </table>
+          </div>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
